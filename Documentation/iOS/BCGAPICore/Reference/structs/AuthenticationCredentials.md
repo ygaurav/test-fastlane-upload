@@ -43,6 +43,12 @@ public let pollUri: String?
 public let creationDate: Date
 ```
 
+### `expirationDate`
+
+```swift
+public let expirationDate: Date
+```
+
 ## Methods
 ### `init(accessToken:refreshToken:psID:pollUri:)`
 
