@@ -22,8 +22,14 @@ func didTapTroubleLoginIn()
 func loginSuccess(user: UserObject)
 ```
 
-### `loginWillBegin()`
+### `loginWillBegin(adhocUserCredentials:)`
 
 ```swift
-func loginWillBegin()
+func loginWillBegin(adhocUserCredentials: (username: String, password: String)?)
+```
+
+### `loginFailed(message:)`
+
+```swift
+func loginFailed(message: String)
 ```

@@ -48,5 +48,5 @@ public convenience init(with configuration: AuthenticationConfiguration)
 ### `refreshAccessToken(completion:)`
 
 ```swift
-@discardableResult public func refreshAccessToken(completion: @escaping (AuthResult<AuthenticationCredentials?>) -> Void) -> BCGAPICore.Operation?
+@discardableResult public func refreshAccessToken(completion: @escaping (AuthResult<AuthenticationCredentials>) -> Void) -> BCGAPICore.Operation?
 ```

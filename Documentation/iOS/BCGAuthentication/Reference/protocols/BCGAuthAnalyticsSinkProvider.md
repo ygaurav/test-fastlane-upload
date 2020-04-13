@@ -7,12 +7,6 @@ public protocol BCGAuthAnalyticsSinkProvider
 ```
 
 ## Methods
-### `logEvent(_:parameters:description:)`
-
-```swift
-func logEvent(_ : String, parameters: [String: Any], description: String)
-```
-
 ### `logEvent(named:parameters:description:)`
 
 ```swift
