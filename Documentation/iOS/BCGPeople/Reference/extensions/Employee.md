@@ -68,3 +68,21 @@ public var locationCountry: String?
 ```swift
 public var personalMeetingID: String
 ```
+
+### `assistant`
+
+```swift
+public var assistant: Assistant?
+```
+
+### `manager`
+
+```swift
+public var manager: Employee?
+```
+
+### `ownFirstName`
+
+```swift
+public var ownFirstName: String
+```

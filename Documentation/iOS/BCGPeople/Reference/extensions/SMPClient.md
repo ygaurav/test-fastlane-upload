@@ -3,10 +3,10 @@
 # `SMPClient`
 
 ## Methods
-### `details(for:dataSet:completion:)`
+### `details(for:field:dataSet:completion:)`
 
 ```swift
-public func details(for employeeID: String, dataSet: String, completion: @escaping(Result<EmployeeDetails, Error>) -> Void) -> BCGAPICore.Operation?
+public func details(for employeeID: String, field: String? = nil, dataSet: String, completion: @escaping(Result<EmployeeDetails, Error>) -> Void) -> BCGAPICore.Operation?
 ```
 
 ### `people(for:param:offset:numberOfRecords:limit:dataSet:completion:)`

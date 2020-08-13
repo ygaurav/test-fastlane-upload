@@ -12,3 +12,15 @@ public enum TeamsKeys: String
 ```swift
 case teamRefreshStatus = "com.bcgPeople.teamRefresh"
 ```
+
+### `userId`
+
+```swift
+case userId = "loggedInUserId"
+```
+
+### `userLocationId`
+
+```swift
+case userLocationId = "loggedInUserLocationId"
+```

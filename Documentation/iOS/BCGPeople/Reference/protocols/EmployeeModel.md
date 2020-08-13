@@ -3,7 +3,7 @@
 # `EmployeeModel`
 
 ```swift
-public protocol EmployeeModel: PhoneConnected, MobileConnected, EmailConnected, WebExConnected, SlackConnected, ZoomConnected, EmployeeIdentifiable
+public protocol EmployeeModel: PhoneConnected, MobileConnected, EmailConnected, WebExConnected, SlackConnected, ZoomConnected, EmployeeIdentifiable, IndexableContact
 ```
 
 ## Properties

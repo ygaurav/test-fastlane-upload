@@ -13,16 +13,6 @@ public class ProfileSectionBuilder
 > Order of using these methods define the order of sections.
 > Caller can use any & every method to build profile UI in any order.
 
-## Properties
-### `headerViewDescriptors`
-
-```swift
-public var headerViewDescriptors: [SectionDescriptorType]
-```
-
-> Array of SectionDescriptorsType which is used to define section & display its header view containing title etc.
-> - important: Without a sectionDescriptorType to define a section, they wont be displayed even if model exists in array returned by *buildSections*
-
 ## Methods
 ### `init(config:)`
 
@@ -42,35 +32,92 @@ public init(config: ProfileConfiguration)
 ### `buildSections()`
 
 ```swift
-public func buildSections() -> [Section]
+public func buildSections() -> [IdentifiableSection]
 ```
 
 > - Returns: Array of Section models used by cellProvider to display cells
 
-### `withHeader(forEmployee:withLocation:)`
+### `withHeader(for:)`
 
 ```swift
-public func withHeader(forEmployee employee: Employee, withLocation location: OfficeLocation?) -> ProfileSectionBuilder
+public func withHeader(for employee: Employee) -> ProfileSectionBuilder
 ```
 
-> Use this method to add header section in profile card. If phone number of employee is in correct format then a cell is added with that.
-> - Note: Section Descriptor Type for this section is automatically added when this method is used.
+> Use this method to add header section in profile card.
 > - Parameters:
 >   - employee: Employee whose profile details like name, image, title etc to display on card
->   - location: OfficeLocation to display in cell below employee title. Profile configuration provided in initializer is used to show/hide temperature (*showWeather*) as celsius/fahernheit (*temperatureScale*) on this cell.
 
 #### Parameters
 
 | Name | Description |
 | ---- | ----------- |
 | employee | Employee whose profile details like name, image, title etc to display on card |
-| location | OfficeLocation to display in cell below employee title. Profile configuration provided in initializer is used to show/hide temperature () as celsius/fahernheit () on this cell. |
 
-### `withTeams(of:)`
+### `withLocation(_:ofEmployee:)`
 
 ```swift
-public func withTeams(of displayable: TeamDisplayable) -> ProfileSectionBuilder
+public func withLocation(_ location: OfficeLocation?, ofEmployee employee: ProfileDisplayable) -> ProfileSectionBuilder
 ```
+
+> Use this method to add location item in profile card.
+> - Parameters:
+>   - location: OfficeLocation to display in cell below employee title. Profile configuration provided in initializer is used to show/hide temperature (*showWeather*) as celsius/fahernheit (*temperatureScale*) on this cell.
+
+#### Parameters
+
+| Name | Description |
+| ---- | ----------- |
+| location | OfficeLocation to display in cell below employee title. Profile configuration provided in initializer is used to show/hide temperature () as celsius/fahernheit () on this cell. |
+
+### `withContactOptions(for:)`
+
+```swift
+public func withContactOptions(for employee: Employee) -> ProfileSectionBuilder
+```
+
+> Use this method to add contact item in profile card.
+> - Parameters:
+>   - employee: Employee whose contact options needs to be displayed
+
+#### Parameters
+
+| Name | Description |
+| ---- | ----------- |
+| employee | Employee whose contact options needs to be displayed |
+
+### `withPhone(for:)`
+
+```swift
+public func withPhone(for connected: PhoneConnected) -> ProfileSectionBuilder
+```
+
+> Use this method to add contact item in profile card.
+> - Parameters:
+>   - employee: Employee whose phone detail card should be shown
+
+#### Parameters
+
+| Name | Description |
+| ---- | ----------- |
+| employee | Employee whose phone detail card should be shown |
+
+### `withAssistant(of:)`
+
+```swift
+public func withAssistant(of displayable: AssistantDisplayable) -> ProfileSectionBuilder
+```
+
+> Use this method to add contact item in profile card.
+> - Parameters:
+>   - employee: Employee whose assistant details should be shown
+
+#### Parameters
+
+| Name | Description |
+| ---- | ----------- |
+| employee | Employee whose assistant details should be shown |
+
+### `withTeams(of:)`
 
 > Use this method to add Teams section in profile card.
 > - Attention: This section wont be displayed under following conditions
@@ -78,12 +125,6 @@ public func withTeams(of displayable: TeamDisplayable) -> ProfileSectionBuilder
 >     - Displayable parameter returns zero teams
 > - Note: Section Descriptor Type for this section is automatically added when this method is used.
 > - Parameter displayable: Object conforming to TeamDisplayable protocol
-
-#### Parameters
-
-| Name | Description |
-| ---- | ----------- |
-| displayable | Object conforming to TeamDisplayable protocol |
 
 ### `withManager(of:)`
 
@@ -125,10 +166,6 @@ public func withReportingLine(of displayable: ReportingLineDisplayable) -> Profi
 
 ### `withPersonalContent(of:)`
 
-```swift
-public func withPersonalContent(of employee: Employee) -> ProfileSectionBuilder
-```
-
 > Use this method to add Personal content section in profile card.
 > ### This includes
 > * Blog url  (if url is not nil)
@@ -138,17 +175,7 @@ public func withPersonalContent(of employee: Employee) -> ProfileSectionBuilder
 > - Note: Section Descriptor Type for this section is automatically added when this method is used.
 > - Parameter employee: Employee object
 
-#### Parameters
-
-| Name | Description |
-| ---- | ----------- |
-| employee | Employee object |
-
 ### `withPracticeAreas(of:)`
-
-```swift
-public func withPracticeAreas(of displayable: PracticeAreaDisplayable) -> ProfileSectionBuilder
-```
 
 > Use this method to add Practice Area section in profile card.
 > - Remark: Practice area is set experience level which is highest amongst its subtopic. Subtpocis are sorted by **name, experience level**.
@@ -156,17 +183,7 @@ public func withPracticeAreas(of displayable: PracticeAreaDisplayable) -> Profil
 > - Note: Section Descriptor Type for this section is automatically added when this method is used.
 > - Parameter displayable: Object conforming to PracticeAreaDisplayable protocol
 
-#### Parameters
-
-| Name | Description |
-| ---- | ----------- |
-| displayable | Object conforming to PracticeAreaDisplayable protocol |
-
 ### `withFunctions(of:)`
-
-```swift
-public func withFunctions(of displayable: FunctionalExpertiseDisplayable) -> ProfileSectionBuilder
-```
 
 > Use this method to add Function Expertise section in profile card.
 > - Remark: Functional expertises are sorted by **experience level**.
@@ -174,81 +191,41 @@ public func withFunctions(of displayable: FunctionalExpertiseDisplayable) -> Pro
 > - Note: Section Descriptor Type for this section is automatically added when this method is used.
 > - Parameter displayable: Object conforming to FunctionalExpertiseDisplayable protocol
 
-#### Parameters
-
-| Name | Description |
-| ---- | ----------- |
-| displayable | Object conforming to FunctionalExpertiseDisplayable protocol |
-
 ### `withProfessionalExperience(of:)`
-
-```swift
-public func withProfessionalExperience(of displayable: ProfessionalBackgroundDisplayable) -> ProfileSectionBuilder
-```
 
 > Use this method to add Professional Experience section in profile card.
 > - Attention: This section wont be displayed if there isn't any professional background model.
 > - Note: Section Descriptor Type for this section is automatically added when this method is used.
 > - Parameter displayable: Object conforming to ProfessionalBackgroundDisplayable protocol
 
-#### Parameters
-
-| Name | Description |
-| ---- | ----------- |
-| displayable | Object conforming to ProfessionalBackgroundDisplayable protocol |
-
 ### `withEducation(of:)`
-
-```swift
-public func withEducation(of displayable: EducationDisplayable) -> ProfileSectionBuilder
-```
 
 > Use this method to add Education section in profile card.
 > - Attention: This section wont be displayed if there isn't any Education model.
 > - Note: Section Descriptor Type for this section is automatically added when this method is used.
 > - Parameter displayable: Object conforming to EducationDisplayable protocol
 
-#### Parameters
-
-| Name | Description |
-| ---- | ----------- |
-| displayable | Object conforming to EducationDisplayable protocol |
-
 ### `withLanguages(of:)`
-
-```swift
-public func withLanguages(of displayable: LanguageDisplayable) -> ProfileSectionBuilder
-```
 
 > Use this method to add Languages section in profile card.
 > - Attention: This section wont be displayed if there isn't any Language model.
 > - Note: Section Descriptor Type for this section is automatically added when this method is used.
 > - Parameter displayable: Object conforming to LanguageDisplayable protocol
 
-#### Parameters
-
-| Name | Description |
-| ---- | ----------- |
-| displayable | Object conforming to LanguageDisplayable protocol |
-
-### `addCustomSection(withItems:andIdentifier:withSectionHeader:)`
+### `addCustomSection(_:)`
 
 ```swift
-public func addCustomSection(withItems items: [Any], andIdentifier identifier: String, withSectionHeader sectionHeader: SectionDescriptorType) throws -> ProfileSectionBuilder
+public func addCustomSection(_ section: IdentifiableSection) throws -> ProfileSectionBuilder
 ```
 
 > Use this method to add Custom section in profile card not predefined in framework.
 > - Attention: This section wont be displayed if items list provided is empty.
 > - Throws: If section identifier provided conflicts with pre defined identifiers.
 > - Parameters:
->   - items: Array of items to be displayed in section cells
->   - identifier: Unique Identifier of section
->   - sectionHeader: SectionDescriptorType which defines the section
+>   - sections: ProfileSectionItem containing items & section details
 
 #### Parameters
 
 | Name | Description |
 | ---- | ----------- |
-| items | Array of items to be displayed in section cells |
-| identifier | Unique Identifier of section |
-| sectionHeader | SectionDescriptorType which defines the section |
+| sections | ProfileSectionItem containing items & section details |

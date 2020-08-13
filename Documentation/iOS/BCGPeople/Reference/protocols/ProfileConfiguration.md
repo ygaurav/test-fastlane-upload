@@ -79,3 +79,33 @@ var showEgnyte: Bool
 ```swift
 var showEvents: Bool
 ```
+
+### `userId`
+
+```swift
+var userId: String
+```
+
+### `dataSet`
+
+```swift
+var dataSet: EmployeeDataSet
+```
+
+### `barButtonOptions`
+
+```swift
+var barButtonOptions: ProfileBarButtons
+```
+
+### `displayContactOptions`
+
+```swift
+var displayContactOptions: ContactOptions
+```
+
+### `disableContactOptionsOverride`
+
+```swift
+var disableContactOptionsOverride: ContactOptions
+```
