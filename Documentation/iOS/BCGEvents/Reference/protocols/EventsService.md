@@ -43,8 +43,14 @@ public protocol EventsService
 @discardableResult func eventsBetween(startTimeInterval: String,
 ```
 
-### `updateAttendeePresence(forEvent:attendeeID:isAttending:callback:)`
+### `updateAttendeePresence(forEvent:attendeeID:fieldsToUpdate:callback:)`
 
 ```swift
 @discardableResult func updateAttendeePresence(forEvent eventID: String,
+```
+
+### `event(forUserId:from:completion:)`
+
+```swift
+@discardableResult func event(forUserId: String, from: TimeInterval, completion: @escaping(Result<EventResults, Error>) -> Void) -> BCGAPICore.Operation?
 ```

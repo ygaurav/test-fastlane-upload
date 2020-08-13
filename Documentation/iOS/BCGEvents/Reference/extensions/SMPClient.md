@@ -57,12 +57,12 @@ public func eventsBetween(startTimeInterval: String,
                           completion: @escaping(Result<EventFilterResults, Error>) -> Void) -> BCGAPICore.Operation?
 ```
 
-### `updateAttendeePresence(forEvent:attendeeID:isAttending:callback:)`
+### `updateAttendeePresence(forEvent:attendeeID:fieldsToUpdate:callback:)`
 
 ```swift
 public func updateAttendeePresence(forEvent eventID: String,
                                    attendeeID: String,
-                                   isAttending: Bool,
+                                   fieldsToUpdate: String,
                                    callback: @escaping(Result<UpdateAttendeeInfoResult, Error>) -> Void) -> BCGAPICore.Operation?
 ```
 
@@ -82,6 +82,12 @@ public func updateAttendeePresence(forEvent eventID: String,
 | attendeeID | <#attendeeID description#> |
 | isAttending | <#isAttending description#> |
 | callback | <#callback description#> |
+
+### `event(forUserId:from:completion:)`
+
+```swift
+public func event(forUserId userId: String, from: TimeInterval, completion: @escaping(Result<EventResults, Error>) -> Void) -> BCGAPICore.Operation?
+```
 
 ### `profileImage(for:completion:)`
 

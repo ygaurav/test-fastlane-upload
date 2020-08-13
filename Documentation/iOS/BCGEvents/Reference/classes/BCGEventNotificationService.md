@@ -7,22 +7,20 @@ public class BCGEventNotificationService: NSObject, NotificationServiceProvider
 ```
 
 ## Methods
-### `scheduleAttendeeNotification(forEvent:attendeeID:attendeeName:)`
+### `scheduleAttendeeNotifications(forEvent:attendeeID:attendeeName:recurringFrequency:)`
 
 ```swift
-public func scheduleAttendeeNotification(forEvent event: Event,
-                                         attendeeID id: String,
-                                         attendeeName name: String)
+public func scheduleAttendeeNotifications(forEvent event: Event,
+                                          attendeeID id: String,
+                                          attendeeName name: String,
+                                          recurringFrequency: NotificationRecurrenceFrequency = .default)
 ```
 
-### `cancelScheduledNotification(forEeventID:)`
+### `removeNotifications(forEevent:eventID:)`
 
 ```swift
-public func cancelScheduledNotification(forEeventID eventID: String)
+public func removeNotifications(forEevent event: Event! = nil, eventID id: String! = nil)
 ```
 
-### `removeDelieveredNotifcaion(forEventID:)`
-
-```swift
-public func removeDelieveredNotifcaion(forEventID eventID: String)
-```
+> This implementation might change if removing notifications for past events (on a day after event day)
+> To achieve same, we might consider adding event start date in userInfo which can then be used to

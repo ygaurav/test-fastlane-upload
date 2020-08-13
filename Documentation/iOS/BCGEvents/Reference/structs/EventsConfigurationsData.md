@@ -6,6 +6,13 @@
 public struct EventsConfigurationsData
 ```
 
+## Properties
+### `canAddEvent`
+
+```swift
+public var canAddEvent: Bool
+```
+
 ## Methods
 ### `init(officeLocation:hostOfficeID:employeeID:hostID:featureState:appType:)`
 

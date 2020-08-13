@@ -7,20 +7,14 @@ public protocol NotificationServiceProvider: class
 ```
 
 ## Methods
-### `scheduleAttendeeNotification(forEvent:attendeeID:attendeeName:)`
+### `scheduleAttendeeNotifications(forEvent:attendeeID:attendeeName:recurringFrequency:)`
 
 ```swift
-func scheduleAttendeeNotification(forEvent event: Event,
+func scheduleAttendeeNotifications(forEvent event: Event,
 ```
 
-### `cancelScheduledNotification(forEeventID:)`
+### `removeNotifications(forEevent:eventID:)`
 
 ```swift
-func cancelScheduledNotification(forEeventID eventID: String)
-```
-
-### `removeDelieveredNotifcaion(forEventID:)`
-
-```swift
-func removeDelieveredNotifcaion(forEventID eventID: String)
+func removeNotifications(forEevent event: Event!, eventID id: String!)
 ```

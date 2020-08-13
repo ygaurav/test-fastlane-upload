@@ -13,6 +13,12 @@ public class EventsViewController: UIViewController
 override public func viewDidLoad()
 ```
 
+### `viewWillAppear(_:)`
+
+```swift
+public override func viewWillAppear(_ animated: Bool)
+```
+
 ### `viewDidAppear(_:)`
 
 ```swift

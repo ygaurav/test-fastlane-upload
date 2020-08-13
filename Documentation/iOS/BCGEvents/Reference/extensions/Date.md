@@ -2,19 +2,6 @@
 
 # `Date`
 
-## Properties
-### `startOfDay`
-
-```swift
-public var startOfDay: Date
-```
-
-### `endOfDay`
-
-```swift
-public var endOfDay: Date
-```
-
 ## Methods
 ### `shortSymbolMonth(timeZone:)`
 
