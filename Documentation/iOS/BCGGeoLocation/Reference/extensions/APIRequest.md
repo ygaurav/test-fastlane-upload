@@ -3,10 +3,10 @@
 # `APIRequest`
 
 ## Methods
-### `allLocations()`
+### `allLocations(isCustom:)`
 
 ```swift
-public static func allLocations() -> APIRequest
+public static func allLocations(isCustom: Bool) -> APIRequest
 ```
 
 ### `location(with:)`

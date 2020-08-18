@@ -91,6 +91,12 @@ public let timezone: String?
 public let weather: Weather?
 ```
 
+### `configuration`
+
+```swift
+public let configuration: Configuration
+```
+
 ### `fullStreet`
 
 ```swift
@@ -104,8 +110,8 @@ public var address: CNPostalAddress
 ```
 
 ## Methods
-### `init(id:name:regionId:street:street2:street3:city:state:zipCode:country:imageUrl:location:timezone:weather:)`
+### `init(id:name:regionId:street:street2:street3:city:state:zipCode:country:imageUrl:location:timezone:weather:configuration:)`
 
 ```swift
-public init(id: String, name: String?, regionId: String?, street: String?, street2: String?, street3: String?, city: String?, state: String?, zipCode: String?, country: String?, imageUrl: String?, location: BCGLocationCoordinate?, timezone: String?, weather: Weather?)
+public init(id: String, name: String?, regionId: String?, street: String?, street2: String?, street3: String?, city: String?, state: String?, zipCode: String?, country: String?, imageUrl: String?, location: BCGLocationCoordinate?, timezone: String?, weather: Weather?, configuration: Configuration)
 ```

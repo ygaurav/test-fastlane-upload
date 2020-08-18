@@ -10,10 +10,10 @@
 
 -   [AllLocations](structs/AllLocations.md)
 -   [BCGLocationCoordinate](structs/BCGLocationCoordinate.md)
+-   [Configuration](structs/Configuration.md)
 -   [LocationAddress](structs/LocationAddress.md)
 -   [OfficeLocation](structs/OfficeLocation.md)
 -   [OfficeLocationDetails](structs/OfficeLocationDetails.md)
--   [Temperature](structs/Temperature.md)
 -   [Weather](structs/Weather.md)
 
 ## Classes
@@ -30,8 +30,9 @@
 -   [AllLocations](extensions/AllLocations.md)
 -   [LocationManager](extensions/LocationManager.md)
 -   [OfficeLocation](extensions/OfficeLocation.md)
+-   [OfficeLocation.Configuration](extensions/OfficeLocation.Configuration.md)
 -   [SMPClient](extensions/SMPClient.md)
--   [Temperature](extensions/Temperature.md)
+-   [TemperatureModel](extensions/TemperatureModel.md)
 -   [Weather](extensions/Weather.md)
 
 # Reference Documentation

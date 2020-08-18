@@ -3,10 +3,10 @@
 # `SMPClient`
 
 ## Methods
-### `allLocations(completion:)`
+### `allLocations(isCustom:completion:)`
 
 ```swift
-@discardableResult public func allLocations(completion: @escaping(Result<AllLocations, Error>) -> Void) -> BCGAPICore.Operation?
+@discardableResult public func allLocations(isCustom: Bool, completion: @escaping(Result<AllLocations, Error>) -> Void) -> BCGAPICore.Operation?
 ```
 
 ### `location(with:completion:)`

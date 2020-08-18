@@ -1,6 +1,6 @@
 **EXTENSION**
 
-# `Temperature`
+# `TemperatureModel`
 
 ## Methods
 ### `init(json:)`

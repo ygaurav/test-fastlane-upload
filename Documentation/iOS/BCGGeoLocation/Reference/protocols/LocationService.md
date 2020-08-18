@@ -7,10 +7,10 @@ public protocol LocationService
 ```
 
 ## Methods
-### `allLocations(completion:)`
+### `allLocations(isCustom:completion:)`
 
 ```swift
-@discardableResult func allLocations(completion: @escaping(Result<AllLocations, Error>) -> Void) -> BCGAPICore.Operation?
+@discardableResult func allLocations(isCustom: Bool, completion: @escaping(Result<AllLocations, Error>) -> Void) -> BCGAPICore.Operation?
 ```
 
 ### `location(with:completion:)`

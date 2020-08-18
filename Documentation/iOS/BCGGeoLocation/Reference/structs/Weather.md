@@ -22,12 +22,5 @@ public let description: String?
 ### `temperature`
 
 ```swift
-public let temperature: [Temperature]
-```
-
-## Methods
-### `init(icon:description:temperature:)`
-
-```swift
-public init(icon: String, description: String?, temperature: [Temperature])
+public let temperature: Temperature
 ```
