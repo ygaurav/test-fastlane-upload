@@ -36,3 +36,10 @@ public let officeSpaceGuidelines: String?
 ```swift
 public let healthReportingEnabled: Bool
 ```
+
+## Methods
+### `init(adminEmail:adminTeamName:poolName:officeSpaceGuidelines:healthReportingEnabled:)`
+
+```swift
+public init(adminEmail: String? = nil, adminTeamName: String? = nil, poolName: String? = nil, officeSpaceGuidelines: String? = nil, healthReportingEnabled: Bool = false)
+```
