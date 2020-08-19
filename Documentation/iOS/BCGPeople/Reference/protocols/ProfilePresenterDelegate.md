@@ -37,8 +37,14 @@ func setupBarButtons(_: ProfileBarButtons)
 func updateFavoriteStatus(_: Bool)
 ```
 
-### `showError(_:)`
+### `showProfileError(_:)`
 
 ```swift
-func showError(_: String)
+func showProfileError(_: String)
+```
+
+### `showError(withTitle:message:)`
+
+```swift
+func showError(withTitle: String?, message: String)
 ```

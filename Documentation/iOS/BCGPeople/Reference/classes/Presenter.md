@@ -68,6 +68,12 @@ public func generateEmployeeContact() -> URL?
 public func favoriteTapped()
 ```
 
+### `showError(withTitle:message:)`
+
+```swift
+public func showError(withTitle title: String?, message: String)
+```
+
 ### `reloadSection(_:)`
 
 ```swift
