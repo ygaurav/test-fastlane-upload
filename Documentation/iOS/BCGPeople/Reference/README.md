@@ -84,6 +84,7 @@
 ## Classes
 
 -   [APIImageResponseSerializer](classes/APIImageResponseSerializer.md)
+-   [AlertBuilder](classes/AlertBuilder.md)
 -   [Assistant](classes/Assistant.md)
 -   [BCGImagePicker](classes/BCGImagePicker.md)
 -   [CollectionViewHandler](classes/CollectionViewHandler.md)

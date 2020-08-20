@@ -39,16 +39,16 @@ public func copiedContactDetail(_ message: String)
 public func updateSections(_ sections: [IdentifiableSection])
 ```
 
-### `showProfileError(_:)`
+### `showProfileError()`
 
 ```swift
-public func showProfileError(_ message: String)
+public func showProfileError()
 ```
 
-### `showError(withTitle:message:)`
+### `showAlert(from:)`
 
 ```swift
-public func showError(withTitle title: String?, message: String)
+public func showAlert(from builder: ProfileViewController.AlertBuilder)
 ```
 
 ### `instantiate(presenter:)`

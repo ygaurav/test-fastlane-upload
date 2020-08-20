@@ -68,12 +68,6 @@ public func generateEmployeeContact() -> URL?
 public func favoriteTapped()
 ```
 
-### `showError(withTitle:message:)`
-
-```swift
-public func showError(withTitle title: String?, message: String)
-```
-
 ### `reloadSection(_:)`
 
 ```swift
@@ -90,4 +84,10 @@ open func supplementaryViewProvider() -> UICollectionViewDiffableDataSource<Iden
 
 ```swift
 open func updateItems() -> [IdentifiableSection]
+```
+
+### `showAlert(from:)`
+
+```swift
+public func showAlert(from builder: AlertBuilder)
 ```
