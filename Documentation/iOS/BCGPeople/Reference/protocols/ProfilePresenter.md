@@ -20,10 +20,10 @@ var spotlightIndexer: EmployeeImageIndexer
 ```
 
 ## Methods
-### `update()`
+### `fetchProfile()`
 
 ```swift
-func update()
+func fetchProfile()
 ```
 
 ### `favoriteTapped()`

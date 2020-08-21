@@ -39,10 +39,10 @@ public func copiedContactDetail(_ message: String)
 public func updateSections(_ sections: [IdentifiableSection])
 ```
 
-### `showProfileError()`
+### `setProfileStatus(_:)`
 
 ```swift
-public func showProfileError()
+public func setProfileStatus(_ status: ProfileStatus)
 ```
 
 ### `showAlert(from:)`

@@ -122,6 +122,7 @@
 -   [IconTheme](enums/IconTheme.md)
 -   [Position](enums/Position.md)
 -   [ProfileSectionType](enums/ProfileSectionType.md)
+-   [ProfileStatus](enums/ProfileStatus.md)
 -   [RequestPath](enums/RequestPath.md)
 -   [TeamsKeys](enums/TeamsKeys.md)
 -   [TimeOfDay](enums/TimeOfDay.md)

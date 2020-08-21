@@ -50,10 +50,10 @@ public var profileConfig: ProfileConfiguration
 public init(employee: Employee, profileConfig: ProfileConfiguration, router: ProfileRouter, service: EmployeeDetailsService, pictureService: PictureService, spotlightIndexer: EmployeeImageIndexer, favoritesDelegate: FavouritesDelegate? = nil)
 ```
 
-### `update()`
+### `fetchProfile()`
 
 ```swift
-public func update()
+public func fetchProfile()
 ```
 
 ### `generateEmployeeContact()`
@@ -68,10 +68,10 @@ public func generateEmployeeContact() -> URL?
 public func favoriteTapped()
 ```
 
-### `reloadSection(_:)`
+### `reloadProfileView()`
 
 ```swift
-public func reloadSection(_ sections: [IdentifiableSection])
+public func reloadProfileView()
 ```
 
 ### `supplementaryViewProvider()`

@@ -19,10 +19,10 @@ func copiedContactDetail(_: String)
 func update(snapshot: NSDiffableDataSourceSnapshot<IdentifiableSection, IdentifiableItem>)
 ```
 
-### `updateSections(_:)`
+### `setProfileStatus(_:)`
 
 ```swift
-func updateSections(_: [IdentifiableSection])
+func setProfileStatus(_: ProfileViewController.ProfileStatus)
 ```
 
 ### `setupBarButtons(_:)`
@@ -35,12 +35,6 @@ func setupBarButtons(_: ProfileBarButtons)
 
 ```swift
 func updateFavoriteStatus(_: Bool)
-```
-
-### `showProfileError()`
-
-```swift
-func showProfileError()
 ```
 
 ### `showAlert(from:)`
