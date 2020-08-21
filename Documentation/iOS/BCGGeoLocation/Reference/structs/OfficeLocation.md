@@ -113,5 +113,5 @@ public var address: CNPostalAddress
 ### `init(id:name:regionId:street:street2:street3:city:state:zipCode:country:imageUrl:location:timezone:weather:configuration:)`
 
 ```swift
-public init(id: String, name: String?, regionId: String?, street: String?, street2: String?, street3: String?, city: String?, state: String?, zipCode: String?, country: String?, imageUrl: String?, location: BCGLocationCoordinate?, timezone: String?, weather: Weather?, configuration: Configuration)
+public init(id: String, name: String?, regionId: String?, street: String?, street2: String?, street3: String?, city: String?, state: String?, zipCode: String?, country: String?, imageUrl: String?, location: BCGLocationCoordinate?, timezone: String?, weather: Weather?, configuration: Configuration = Configuration())
 ```
