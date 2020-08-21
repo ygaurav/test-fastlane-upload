@@ -66,6 +66,7 @@
 -   [Event](extensions/Event.md)
 -   [EventCheckInViewController](extensions/EventCheckInViewController.md)
 -   [EventsViewController](extensions/EventsViewController.md)
+-   [NSMutableAttributedString](extensions/NSMutableAttributedString.md)
 -   [PastEventsViewController](extensions/PastEventsViewController.md)
 -   [ProfileEventCell](extensions/ProfileEventCell.md)
 -   [ProfileEventsView](extensions/ProfileEventsView.md)
