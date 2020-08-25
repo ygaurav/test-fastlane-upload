@@ -37,9 +37,15 @@ public let officeSpaceGuidelines: String?
 public let healthReportingEnabled: Bool
 ```
 
-## Methods
-### `init(adminEmail:adminTeamName:poolName:officeSpaceGuidelines:healthReportingEnabled:)`
+### `checkinEnabled`
 
 ```swift
-public init(adminEmail: String? = nil, adminTeamName: String? = nil, poolName: String? = nil, officeSpaceGuidelines: String? = nil, healthReportingEnabled: Bool = false)
+public let checkinEnabled: Bool
+```
+
+## Methods
+### `init(adminEmail:adminTeamName:poolName:officeSpaceGuidelines:healthReportingEnabled:checkinEnabled:)`
+
+```swift
+public init(adminEmail: String? = nil, adminTeamName: String? = nil, poolName: String? = nil, officeSpaceGuidelines: String? = nil, healthReportingEnabled: Bool = false, checkinEnabled: Bool = true)
 ```
