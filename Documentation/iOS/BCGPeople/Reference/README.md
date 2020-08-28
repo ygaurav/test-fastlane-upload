@@ -15,7 +15,6 @@
 -   [EmployeeDetailIdentifiable](protocols/EmployeeDetailIdentifiable.md)
 -   [EmployeeDetailsService](protocols/EmployeeDetailsService.md)
 -   [EmployeeIdentifiable](protocols/EmployeeIdentifiable.md)
--   [EmployeeImageIndexer](protocols/EmployeeImageIndexer.md)
 -   [EmployeeListService](protocols/EmployeeListService.md)
 -   [EmployeeModel](protocols/EmployeeModel.md)
 -   [EmployeeNavigable](protocols/EmployeeNavigable.md)
@@ -35,6 +34,7 @@
 -   [ProfileConfiguration](protocols/ProfileConfiguration.md)
 -   [ProfileContactCellDelegate](protocols/ProfileContactCellDelegate.md)
 -   [ProfileDisplayable](protocols/ProfileDisplayable.md)
+-   [ProfileHeaderCellDelegate](protocols/ProfileHeaderCellDelegate.md)
 -   [ProfileLocationCellDelegate](protocols/ProfileLocationCellDelegate.md)
 -   [ProfilePresenter](protocols/ProfilePresenter.md)
 -   [ProfilePresenterDelegate](protocols/ProfilePresenterDelegate.md)
@@ -45,6 +45,7 @@
 -   [RequestCredentialProvider](protocols/RequestCredentialProvider.md)
 -   [ScreenRefreshable](protocols/ScreenRefreshable.md)
 -   [SearchService](protocols/SearchService.md)
+-   [SpotlightContactIndexer](protocols/SpotlightContactIndexer.md)
 -   [TeamDisplayable](protocols/TeamDisplayable.md)
 -   [TeamService](protocols/TeamService.md)
 

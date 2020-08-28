@@ -37,10 +37,10 @@ public func buildSections() -> [IdentifiableSection]
 
 > - Returns: Array of Section models used by cellProvider to display cells
 
-### `withHeader(for:)`
+### `withHeader(for:shareEnabled:favoriteStatus:)`
 
 ```swift
-public func withHeader(for employee: Employee) -> ProfileSectionBuilder
+public func withHeader(for employee: Employee, shareEnabled: Bool, favoriteStatus: Bool) -> ProfileSectionBuilder
 ```
 
 > Use this method to add header section in profile card.

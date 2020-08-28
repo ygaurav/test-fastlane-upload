@@ -72,3 +72,9 @@ var locationCity: String?
 ```swift
 var locationCountry: String?
 ```
+
+### `indexableContacts`
+
+```swift
+var indexableContacts: [IndexableContact]
+```

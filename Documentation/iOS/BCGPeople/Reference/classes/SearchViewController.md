@@ -23,7 +23,7 @@ public var searchIntent: INIntent?
 ### `instantiateViewController(enableSiri:searchService:imageIndexer:contactCacheManager:imageService:employeeDetailDelegate:)`
 
 ```swift
-public static func instantiateViewController(enableSiri: Bool = false, searchService: SearchService, imageIndexer: EmployeeImageIndexer, contactCacheManager: ContactCacheManager, imageService: PictureService, employeeDetailDelegate: @escaping EmployeeDetailDelegate) -> SearchViewController
+public static func instantiateViewController(enableSiri: Bool = false, searchService: SearchService, imageIndexer: SpotlightContactIndexer, contactCacheManager: ContactCacheManager, imageService: PictureService, employeeDetailDelegate: @escaping EmployeeDetailDelegate) -> SearchViewController
 ```
 
 ### `init(nibName:bundle:)`

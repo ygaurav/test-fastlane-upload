@@ -13,10 +13,10 @@ public protocol ProfilePresenterDelegate: class
 func copiedContactDetail(_: String)
 ```
 
-### `update(snapshot:)`
+### `update(snapshot:withAnimations:)`
 
 ```swift
-func update(snapshot: NSDiffableDataSourceSnapshot<IdentifiableSection, IdentifiableItem>)
+func update(snapshot: NSDiffableDataSourceSnapshot<IdentifiableSection, IdentifiableItem>, withAnimations: Bool)
 ```
 
 ### `setProfileStatus(_:)`
@@ -31,14 +31,14 @@ func setProfileStatus(_: ProfileViewController.ProfileStatus)
 func setupBarButtons(_: ProfileBarButtons)
 ```
 
-### `updateFavoriteStatus(_:)`
-
-```swift
-func updateFavoriteStatus(_: Bool)
-```
-
 ### `showAlert(from:)`
 
 ```swift
 func showAlert(from: ProfileViewController.AlertBuilder)
+```
+
+### `shareUrl(_:)`
+
+```swift
+func shareUrl(_: URL?)
 ```

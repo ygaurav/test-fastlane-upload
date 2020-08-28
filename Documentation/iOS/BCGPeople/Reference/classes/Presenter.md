@@ -16,7 +16,7 @@ public weak var delegate: ProfilePresenterDelegate?
 ### `spotlightIndexer`
 
 ```swift
-public let spotlightIndexer: EmployeeImageIndexer
+public let spotlightIndexer: SpotlightContactIndexer
 ```
 
 ### `router`
@@ -47,7 +47,7 @@ public var profileConfig: ProfileConfiguration
 ### `init(employee:profileConfig:router:service:pictureService:spotlightIndexer:favoritesDelegate:)`
 
 ```swift
-public init(employee: Employee, profileConfig: ProfileConfiguration, router: ProfileRouter, service: EmployeeDetailsService, pictureService: PictureService, spotlightIndexer: EmployeeImageIndexer, favoritesDelegate: FavouritesDelegate? = nil)
+public init(employee: Employee, profileConfig: ProfileConfiguration, router: ProfileRouter, service: EmployeeDetailsService, pictureService: PictureService, spotlightIndexer: SpotlightContactIndexer, favoritesDelegate: FavouritesDelegate? = nil)
 ```
 
 ### `fetchProfile()`
@@ -56,22 +56,22 @@ public init(employee: Employee, profileConfig: ProfileConfiguration, router: Pro
 public func fetchProfile()
 ```
 
-### `generateEmployeeContact()`
+### `onShare()`
 
 ```swift
-public func generateEmployeeContact() -> URL?
+public func onShare()
 ```
 
-### `favoriteTapped()`
+### `onFavorite()`
 
 ```swift
-public func favoriteTapped()
+public func onFavorite()
 ```
 
-### `reloadProfileView()`
+### `reloadProfileView(withAnimations:)`
 
 ```swift
-public func reloadProfileView()
+public func reloadProfileView(withAnimations: Bool = true)
 ```
 
 ### `supplementaryViewProvider()`

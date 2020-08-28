@@ -37,10 +37,10 @@ public func collectionView(_ collectionView: UICollectionView, didSelectItemAt i
 public func scrollViewDidScroll(_ scrollView: UIScrollView)
 ```
 
-### `apply(_:)`
+### `apply(_:withAnimations:)`
 
 ```swift
-public func apply(_ snapshot: NSDiffableDataSourceSnapshot<IdentifiableSection, IdentifiableItem>)
+public func apply(_ snapshot: NSDiffableDataSourceSnapshot<IdentifiableSection, IdentifiableItem>, withAnimations: Bool = true)
 ```
 
 ### `updateSections(_:)`

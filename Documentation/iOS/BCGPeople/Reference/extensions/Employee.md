@@ -86,3 +86,9 @@ public var manager: Employee?
 ```swift
 public var ownFirstName: String
 ```
+
+### `indexableContacts`
+
+```swift
+public var indexableContacts: [IndexableContact]
+```

@@ -9,22 +9,16 @@
 open func createCollectionViewLayout() -> UICollectionViewCompositionalLayout
 ```
 
-### `updateFavoriteStatus(_:)`
-
-```swift
-public func updateFavoriteStatus(_ status: Bool)
-```
-
 ### `setupBarButtons(_:)`
 
 ```swift
 public func setupBarButtons(_ options: ProfileBarButtons)
 ```
 
-### `update(snapshot:)`
+### `update(snapshot:withAnimations:)`
 
 ```swift
-public func update(snapshot: NSDiffableDataSourceSnapshot<IdentifiableSection, IdentifiableItem>)
+public func update(snapshot: NSDiffableDataSourceSnapshot<IdentifiableSection, IdentifiableItem>, withAnimations: Bool = true)
 ```
 
 ### `copiedContactDetail(_:)`
@@ -43,6 +37,12 @@ public func updateSections(_ sections: [IdentifiableSection])
 
 ```swift
 public func setProfileStatus(_ status: ProfileStatus)
+```
+
+### `shareUrl(_:)`
+
+```swift
+public func shareUrl(_ contactUrl: URL?)
 ```
 
 ### `showAlert(from:)`

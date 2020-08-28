@@ -16,7 +16,7 @@ public override func awakeFromNib()
 ### `setUp(employee:pictureService:imageIndexer:)`
 
 ```swift
-public func setUp(employee: EmployeeModel, pictureService: PictureService, imageIndexer: EmployeeImageIndexer)
+public func setUp(employee: EmployeeModel, pictureService: PictureService, imageIndexer: SpotlightContactIndexer)
 ```
 
 ### `getCell(inTableView:for:)`

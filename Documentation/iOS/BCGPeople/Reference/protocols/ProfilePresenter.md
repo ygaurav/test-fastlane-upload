@@ -3,7 +3,7 @@
 # `ProfilePresenter`
 
 ```swift
-public protocol ProfilePresenter: ProfileContactCellDelegate, AssistantCellDelegate, BasicEmployeeCellDelegate, ProfileLocationCellDelegate, ProfileStandardCellDelegate
+public protocol ProfilePresenter: ProfileContactCellDelegate, AssistantCellDelegate, BasicEmployeeCellDelegate, ProfileLocationCellDelegate, ProfileStandardCellDelegate, ProfileHeaderCellDelegate
 ```
 
 ## Properties
@@ -16,7 +16,7 @@ var pictureService: PictureService
 ### `spotlightIndexer`
 
 ```swift
-var spotlightIndexer: EmployeeImageIndexer
+var spotlightIndexer: SpotlightContactIndexer
 ```
 
 ## Methods
@@ -24,18 +24,6 @@ var spotlightIndexer: EmployeeImageIndexer
 
 ```swift
 func fetchProfile()
-```
-
-### `favoriteTapped()`
-
-```swift
-func favoriteTapped()
-```
-
-### `generateEmployeeContact()`
-
-```swift
-func generateEmployeeContact() -> URL?
 ```
 
 ### `supplementaryViewProvider()`
