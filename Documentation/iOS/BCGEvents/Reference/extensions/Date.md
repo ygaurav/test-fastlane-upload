@@ -21,12 +21,6 @@ public func dayOfMonth(timeZone identifier: String) -> Int
 public func monthForDate(timeZone identifier: String) -> Int
 ```
 
-### `startOfDayTimeInterval(timeZoneID:)`
-
-```swift
-public func startOfDayTimeInterval(timeZoneID: String) -> TimeInterval
-```
-
 ### `setTime(hour:minute:seconds:timeZoneIdentifier:)`
 
 ```swift

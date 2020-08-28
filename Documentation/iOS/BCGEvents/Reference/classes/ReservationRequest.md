@@ -1,9 +1,9 @@
 **CLASS**
 
-# `AttendeesInfo`
+# `ReservationRequest`
 
 ```swift
-public class AttendeesInfo: ExpressibleByJSONDictionary
+public class ReservationRequest: ExpressibleByJSONDictionary
 ```
 
 ## Methods

@@ -13,19 +13,8 @@ public class ProfileEventsManager: ProfileEventHandler
 public init(service: GenericService)
 ```
 
-### `fetchEmployeeEvents(for:loggedInUserId:timeZoneID:callBackHandler:)`
-
-```swift
-public func fetchEmployeeEvents(for id: String,
-                                loggedInUserId: String,
-                                timeZoneID: String,
-                                callBackHandler: @escaping ([Event], String?) -> Void)
-```
-
 ### `fetchEvents(locationID:startDate:handler:)`
 
 ```swift
-public func fetchEvents(locationID: String,
-                        startDate: Date,
-                        handler: @escaping ([Event], String?) -> Void)
+public func fetchEvents(locationID: String, startDate: Date, handler: @escaping ([Event], String?) -> Void)
 ```

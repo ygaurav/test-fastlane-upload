@@ -35,7 +35,6 @@
 
 -   [APIImageResponseSerializer](classes/APIImageResponseSerializer.md)
 -   [APITextResponseSerializer](classes/APITextResponseSerializer.md)
--   [AttendeesInfo](classes/AttendeesInfo.md)
 -   [BCGEventNotificationService](classes/BCGEventNotificationService.md)
 -   [EventCheckInViewController](classes/EventCheckInViewController.md)
 -   [EventDetailsViewController](classes/EventDetailsViewController.md)
@@ -47,6 +46,7 @@
 -   [ProfileEventCell](classes/ProfileEventCell.md)
 -   [ProfileEventsManager](classes/ProfileEventsManager.md)
 -   [ProfileEventsView](classes/ProfileEventsView.md)
+-   [ReservationRequest](classes/ReservationRequest.md)
 
 ## Enums
 
@@ -56,6 +56,7 @@
 -   [EventsKeys](enums/EventsKeys.md)
 -   [NotificationRecurrenceFrequency](enums/NotificationRecurrenceFrequency.md)
 -   [RequestPath](enums/RequestPath.md)
+-   [State](enums/State.md)
 
 ## Extensions
 

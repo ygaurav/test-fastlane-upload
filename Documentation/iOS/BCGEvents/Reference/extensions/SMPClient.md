@@ -14,7 +14,7 @@
 ### `events(for:after:completion:)`
 
 ```swift
-public func events(for locationID: String, after timeInterval: String, completion: @escaping(Result<EventFilterResults, Error>) -> Void) -> BCGAPICore.Operation?
+public func events(for locationID: String, after date: Date, completion: @escaping (Result<EventFilterResults, Error>) -> ()) -> BCGAPICore.Operation?
 ```
 
 ### `add(event:completion:)`
@@ -27,7 +27,7 @@ public func add(event: Event, completion: @escaping(Result<CreateEventResult, Er
 
 ```swift
 public func requestSeatFor(eventID: String,
-                           attendeeInfo: AttendeesInfo,
+                           attendeeInfo: ReservationRequest,
                            completion: @escaping(Result<RequestSeatResult, Error>) -> Void) -> BCGAPICore.Operation?
 ```
 
@@ -35,26 +35,20 @@ public func requestSeatFor(eventID: String,
 
 ```swift
 public func removeAttendee(eventID: String,
-                           attendeeInfo: AttendeesInfo,
+                           attendeeInfo: ReservationRequest,
                            completion: @escaping(Result<DeleteAttendeeResult, Error>) -> Void) -> BCGAPICore.Operation?
 ```
 
-### `requestEventsReport(forLocation:startTimeInterval:endTimeInterval:completion:)`
+### `requestEventsReport(forLocation:start:end:completion:)`
 
 ```swift
-public func requestEventsReport(forLocation locID: String,
-                                startTimeInterval: TimeInterval,
-                                endTimeInterval: TimeInterval,
-                                completion: @escaping (Result<Data, Error>) -> Void) -> BCGAPICore.Operation?
+public func requestEventsReport(forLocation locID: String, start: Date, end: Date, completion: @escaping (Result<Data, Error>) -> ()) -> BCGAPICore.Operation?
 ```
 
-### `eventsBetween(startTimeInterval:endTimeInterval:locationID:completion:)`
+### `eventsBetween(start:end:locationID:completion:)`
 
 ```swift
-public func eventsBetween(startTimeInterval: String,
-                          endTimeInterval: String,
-                          locationID: String,
-                          completion: @escaping(Result<EventFilterResults, Error>) -> Void) -> BCGAPICore.Operation?
+@discardableResult public func eventsBetween(start: Date, end: Date, locationID: String, completion: @escaping (Result<EventFilterResults, Error>) -> ()) -> BCGAPICore.Operation?
 ```
 
 ### `updateAttendeePresence(forEvent:attendeeID:fieldsToUpdate:callback:)`
@@ -86,7 +80,49 @@ public func updateAttendeePresence(forEvent eventID: String,
 ### `event(forUserId:from:completion:)`
 
 ```swift
-public func event(forUserId userId: String, from: TimeInterval, completion: @escaping(Result<EventResults, Error>) -> Void) -> BCGAPICore.Operation?
+public func event(forUserId userId: String, from: Date, completion: @escaping (Result<EventResults, Error>) -> ()) -> BCGAPICore.Operation?
+```
+
+### `update(_:completion:)`
+
+```swift
+public func update(_ event: Event, completion: @escaping (Result<UpdateEventResult, Error>) -> Void) -> BCGAPICore.Operation?
+```
+
+### `update(eventID:title:state:completion:)`
+
+```swift
+public func update(eventID: String, title: String, state: Event.State, completion: @escaping (Result<UpdateEventResult, Error>) -> Void) -> BCGAPICore.Operation?
+```
+
+### `categories(completion:)`
+
+```swift
+public func categories(completion: @escaping (Result<EventCategoryResult, Error>) -> Void) -> BCGAPICore.Operation?
+```
+
+### `userGroups(completion:)`
+
+```swift
+public func userGroups(completion: @escaping (Result<EventGroupsResult, Error>) -> Void) -> BCGAPICore.Operation?
+```
+
+### `approve(request:forEventID:withAttendees:completion:)`
+
+```swift
+public func approve(request: ReservationRequest, forEventID eventID: String, withAttendees: Bool, completion: @escaping (Result<ApproveAttendeeResult, Error>) -> Void) -> BCGAPICore.Operation?
+```
+
+### `delete(eventID:completion:)`
+
+```swift
+public func delete(eventID: String, completion: @escaping (Result<DeleteEventResponse, Error>) -> Void) -> BCGAPICore.Operation?
+```
+
+### `event(withId:withAttendees:completion:)`
+
+```swift
+public func event(withId id: String, withAttendees: Bool, completion: @escaping (Result<FetchEventResults, Error>) -> Void) -> BCGAPICore.Operation?
 ```
 
 ### `profileImage(for:completion:)`
