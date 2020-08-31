@@ -109,6 +109,48 @@ case accessDenied
 case mfaNotSetup
 ```
 
+### `userUnauthorized`
+
+```swift
+case userUnauthorized
+```
+
+### `invalidAccessToken`
+
+```swift
+case invalidAccessToken
+```
+
+### `userForbidden`
+
+```swift
+case userForbidden
+```
+
+### `applicationForbidden`
+
+```swift
+case applicationForbidden
+```
+
+### `mfaTypeUnsupported`
+
+```swift
+case mfaTypeUnsupported
+```
+
+### `lockedOut`
+
+```swift
+case lockedOut
+```
+
+### `mfaChallenge`
+
+```swift
+case mfaChallenge
+```
+
 ### `unknown(message:)`
 
 ```swift

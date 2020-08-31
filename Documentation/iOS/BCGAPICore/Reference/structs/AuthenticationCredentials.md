@@ -49,9 +49,15 @@ public let creationDate: Date
 public let expirationDate: Date
 ```
 
-## Methods
-### `init(accessToken:refreshToken:psID:pollUri:)`
+### `idToken`
 
 ```swift
-public init(accessToken: String? = nil, refreshToken: String? = nil, psID: String? = nil, pollUri: String? = nil)
+public let idToken: String?
+```
+
+## Methods
+### `init(accessToken:refreshToken:psID:pollUri:idToken:)`
+
+```swift
+public init(accessToken: String? = nil, refreshToken: String? = nil, psID: String? = nil, pollUri: String? = nil, idToken: String? = nil)
 ```

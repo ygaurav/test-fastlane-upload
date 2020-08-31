@@ -19,7 +19,7 @@ public var failureReason: String?
 ### `==(_:_:)`
 
 ```swift
-public static func ==(lhs: APIServiceError, rhs: APIServiceError) -> Bool
+public static func == (lhs: APIServiceError, rhs: APIServiceError) -> Bool
 ```
 
 #### Parameters
