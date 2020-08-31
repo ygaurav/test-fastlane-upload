@@ -14,7 +14,7 @@ public var canAddEvent: Bool
 ```
 
 ## Methods
-### `init(officeLocation:hostOfficeID:employeeID:hostID:featureState:appType:)`
+### `init(officeLocation:hostOfficeID:employeeID:hostID:featureState:appType:poolOffices:)`
 
 ```swift
 public init(officeLocation: OfficeLocation? = nil,
@@ -22,5 +22,6 @@ public init(officeLocation: OfficeLocation? = nil,
             employeeID: String? = nil,
             hostID: String? = nil,
             featureState: EventFeature,
-            appType: EventAppType = .traverse)
+            appType: EventAppType = .traverse,
+            poolOffices: [PoolOffice] = [])
 ```

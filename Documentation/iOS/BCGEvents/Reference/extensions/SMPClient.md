@@ -14,7 +14,7 @@
 ### `events(for:after:completion:)`
 
 ```swift
-public func events(for locationID: String, after date: Date, completion: @escaping (Result<EventFilterResults, Error>) -> ()) -> BCGAPICore.Operation?
+public func events(for locationID: [String], after date: Date, completion: @escaping (Result<EventFilterResponse, Error>) -> ()) -> BCGAPICore.Operation?
 ```
 
 ### `add(event:completion:)`
@@ -48,7 +48,7 @@ public func requestEventsReport(forLocation locID: String, start: Date, end: Dat
 ### `eventsBetween(start:end:locationID:completion:)`
 
 ```swift
-@discardableResult public func eventsBetween(start: Date, end: Date, locationID: String, completion: @escaping (Result<EventFilterResults, Error>) -> ()) -> BCGAPICore.Operation?
+@discardableResult public func eventsBetween(start: Date, end: Date, locationID: [String], completion: @escaping (Result<EventFilterResponse, Error>) -> ()) -> BCGAPICore.Operation?
 ```
 
 ### `updateAttendeePresence(forEvent:attendeeID:fieldsToUpdate:callback:)`
@@ -123,6 +123,12 @@ public func delete(eventID: String, completion: @escaping (Result<DeleteEventRes
 
 ```swift
 public func event(withId id: String, withAttendees: Bool, completion: @escaping (Result<FetchEventResults, Error>) -> Void) -> BCGAPICore.Operation?
+```
+
+### `fetchAllPoolOffices(for:completion:)`
+
+```swift
+public func fetchAllPoolOffices(for pool: String, completion: @escaping(Result<PoolOfficeModel, Error>) -> Void ) -> BCGAPICore.Operation?
 ```
 
 ### `profileImage(for:completion:)`

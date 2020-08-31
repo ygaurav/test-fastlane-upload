@@ -10,7 +10,13 @@ public protocol EventsService
 ### `events(for:after:completion:)`
 
 ```swift
-@discardableResult func events(for locationID: String, after date: Date, completion: @escaping (Result<EventFilterResults, Error>) -> ()) -> BCGAPICore.Operation?
+@discardableResult func events(for locationID: [String], after date: Date, completion: @escaping (Result<EventFilterResponse, Error>) -> ()) -> BCGAPICore.Operation?
+```
+
+### `fetchAllPoolOffices(for:completion:)`
+
+```swift
+@discardableResult func fetchAllPoolOffices(for pool: String, completion: @escaping(Result<PoolOfficeModel, Error>) -> Void ) -> BCGAPICore.Operation?
 ```
 
 ### `add(event:completion:)`
@@ -40,7 +46,7 @@ public protocol EventsService
 ### `eventsBetween(start:end:locationID:completion:)`
 
 ```swift
-@discardableResult func eventsBetween(start: Date, end: Date, locationID: String, completion: @escaping (Result<EventFilterResults, Error>) -> ()) -> BCGAPICore.Operation?
+@discardableResult func eventsBetween(start: Date, end: Date, locationID: [String], completion: @escaping (Result<EventFilterResponse, Error>) -> ()) -> BCGAPICore.Operation?
 ```
 
 ### `updateAttendeePresence(forEvent:attendeeID:fieldsToUpdate:callback:)`
