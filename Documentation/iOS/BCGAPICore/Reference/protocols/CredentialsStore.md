@@ -56,6 +56,12 @@ var email: String?
 @discardableResult func save(password: String) -> Bool
 ```
 
+### `save(hrid:)`
+
+```swift
+@discardableResult func save(hrid: String) -> Bool
+```
+
 ### `clear()`
 
 ```swift
