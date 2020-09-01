@@ -6,7 +6,7 @@
 ### `headers`
 
 ```swift
-var headers: [String : String]
+var headers: [String: String]
 ```
 
 ### `isLoggedIn`

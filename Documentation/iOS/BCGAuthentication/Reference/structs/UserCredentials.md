@@ -16,7 +16,7 @@ public init(userName: String, password: String)
 ### `==(_:_:)`
 
 ```swift
-public static func ==(lhs: UserCredentials, rhs: UserCredentials) -> Bool
+public static func == (lhs: UserCredentials, rhs: UserCredentials) -> Bool
 ```
 
 #### Parameters

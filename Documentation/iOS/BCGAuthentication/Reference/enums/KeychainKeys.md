@@ -3,7 +3,7 @@
 # `KeychainKeys`
 
 ```swift
-public enum KeychainKeys :String
+public enum KeychainKeys: String
 ```
 
 > Keys used for retrieving/storing username/password from/to KeychainStore
@@ -27,11 +27,11 @@ case password
 ### `key`
 
 ```swift
-public var key:String
+public var key: String
 ```
 
 ### `adhocKey`
 
 ```swift
-public var adhocKey:String
+public var adhocKey: String
 ```

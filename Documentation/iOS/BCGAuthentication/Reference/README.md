@@ -8,6 +8,7 @@
 ## Structs
 
 -   [BCGLoginConfigurations](structs/BCGLoginConfigurations.md)
+-   [BiometricConfiguration](structs/BiometricConfiguration.md)
 -   [KeychainConfiguration](structs/KeychainConfiguration.md)
 -   [LoginUIConfigurator](structs/LoginUIConfigurator.md)
 -   [UserCredentials](structs/UserCredentials.md)
@@ -17,12 +18,14 @@
 
 -   [BCGAuthAnalyticsUtility](classes/BCGAuthAnalyticsUtility.md)
 -   [BCGLoginViewController](classes/BCGLoginViewController.md)
+-   [BiometricAuthenticator](classes/BiometricAuthenticator.md)
 -   [SMPClient](classes/SMPClient.md)
 -   [UserSession](classes/UserSession.md)
 
 ## Enums
 
 -   [AuthResult](enums/AuthResult.md)
+-   [BiometricError](enums/BiometricError.md)
 -   [KeychainKeys](enums/KeychainKeys.md)
 
 ## Extensions
@@ -30,7 +33,6 @@
 -   [BCGLoginViewController](extensions/BCGLoginViewController.md)
 -   [NSError](extensions/NSError.md)
 -   [Optional](extensions/Optional.md)
--   [UserDefaults](extensions/UserDefaults.md)
 -   [UserSession](extensions/UserSession.md)
 -   [UserSessionClient](extensions/UserSessionClient.md)
 

@@ -14,6 +14,13 @@ public class BCGLoginViewController: UIViewController, LoadingIndicator
 > static func instantiate(session: UserSession, loginConfiguration: BCGLoginConfigurations, delegate: BCGLoginViewControllerDelegate)
 > ````
 
+## Properties
+### `preferredStatusBarStyle`
+
+```swift
+public override var preferredStatusBarStyle: UIStatusBarStyle
+```
+
 ## Methods
 ### `viewDidLoad()`
 
@@ -21,16 +28,35 @@ public class BCGLoginViewController: UIViewController, LoadingIndicator
 public override func viewDidLoad()
 ```
 
-### `instantiate(loginConfiguration:uiConfigurator:delegate:)`
+### `instantiate(loginConfiguration:biometricConfiguration:uiConfigurator:delegate:)`
 
 ```swift
-public static func instantiate(loginConfiguration: BCGLoginConfigurations, uiConfigurator: UIConfigurator?, delegate: BCGLoginViewControllerDelegate) -> UIViewController?
+public static func instantiate(loginConfiguration: BCGLoginConfigurations, biometricConfiguration: BiometricConfiguration, uiConfigurator: UIConfigurator?, delegate: BCGLoginViewControllerDelegate) -> UIViewController?
 ```
 
 >  Method to create & return Login Screen object to display
 >
 > - Precondition: **loginConfiguration** parameter must be non-nil.
-> - Important: **session** parameter must be non-nil for login facility to work
+>  - parameters:
+>      - loginConfiguration: Configuration which sets the API Endpoint & related keys to communicate with
+>      - biometricConfiguration: Configuration containing properties which customises biometric authentication performed on Login screen
+>      - uiConfigurator: Configuration for customising UI of login screen. Please check the options provided in UIConfiguration.
+>      - delegate: Delegate which conforms to `BCGLoginViewControllerDelegate` which will receive various login screen callback events.
+
+#### Parameters
+
+| Name | Description |
+| ---- | ----------- |
+| loginConfiguration | Configuration which sets the API Endpoint & related keys to communicate with |
+| biometricConfiguration | Configuration containing properties which customises biometric authentication performed on Login screen |
+| uiConfigurator | Configuration for customising UI of login screen. Please check the options provided in UIConfiguration. |
+| delegate | Delegate which conforms to `BCGLoginViewControllerDelegate` which will receive various login screen callback events. |
+
+### `traitCollectionDidChange(_:)`
+
+```swift
+public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?)
+```
 
 ### `viewWillAppear(_:)`
 
