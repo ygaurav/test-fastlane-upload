@@ -3,7 +3,7 @@
 # `ProfilePresenter`
 
 ```swift
-public protocol ProfilePresenter: ProfileContactCellDelegate, AssistantCellDelegate, BasicEmployeeCellDelegate, ProfileLocationCellDelegate, ProfileStandardCellDelegate, ProfileHeaderCellDelegate
+public protocol ProfilePresenter: ProfileContactCellDelegate, AssistantCellDelegate, BasicEmployeeCellDelegate, ProfileLocationCellDelegate, ProfileStandardCellDelegate, ProfileHeaderCellDelegate, SimpleActionableCellDelegate
 ```
 
 ## Properties

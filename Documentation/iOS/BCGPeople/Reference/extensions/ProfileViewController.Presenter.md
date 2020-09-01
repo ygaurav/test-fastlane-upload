@@ -44,3 +44,9 @@ public func showOffice(_ office: OfficeLocationIdentifiable)
 ```swift
 public func onSelect(_ contactType: EmployeeContactType)
 ```
+
+### `onAction(_:)`
+
+```swift
+public func onAction(_ action: SimpleActionItem)
+```

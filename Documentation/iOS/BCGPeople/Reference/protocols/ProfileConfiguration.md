@@ -62,6 +62,12 @@ var showTeams: Bool
 var showManager: Bool
 ```
 
+### `showVendors`
+
+```swift
+var showVendors: Bool
+```
+
 ### `showReportingLine`
 
 ```swift

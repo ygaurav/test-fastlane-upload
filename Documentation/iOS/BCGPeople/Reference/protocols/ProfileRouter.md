@@ -18,3 +18,9 @@ func showProfile(of employeeIdentifiable: EmployeeIdentifiable)
 ```swift
 func showOffice(of: OfficeLocationIdentifiable)
 ```
+
+### `showVendors(_:pictureService:spotlightIndexer:)`
+
+```swift
+func showVendors(_: [Employee], pictureService: PictureService, spotlightIndexer: SpotlightContactIndexer)
+```

@@ -43,3 +43,9 @@ open func showProfile(of employeeIdentifiable: EmployeeIdentifiable)
 ```swift
 open func showOffice(of identifiableLocation: OfficeLocationIdentifiable)
 ```
+
+### `showVendors(_:pictureService:spotlightIndexer:)`
+
+```swift
+public func showVendors(_ vendors: [Employee], pictureService: PictureService, spotlightIndexer: SpotlightContactIndexer)
+```

@@ -20,6 +20,12 @@ public var layout: UICollectionViewCompositionalLayout?
 public override func viewDidLoad()
 ```
 
+### `viewWillAppear(_:)`
+
+```swift
+public override func viewWillAppear(_ animated: Bool)
+```
+
 ### `viewDidAppear(_:)`
 
 ```swift

@@ -27,12 +27,6 @@ public func update(snapshot: NSDiffableDataSourceSnapshot<IdentifiableSection, I
 public func copiedContactDetail(_ message: String)
 ```
 
-### `updateSections(_:)`
-
-```swift
-public func updateSections(_ sections: [IdentifiableSection])
-```
-
 ### `setProfileStatus(_:)`
 
 ```swift

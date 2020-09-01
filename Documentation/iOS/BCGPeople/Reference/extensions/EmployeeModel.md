@@ -3,6 +3,12 @@
 # `EmployeeModel`
 
 ## Properties
+### `isVendor`
+
+```swift
+public var isVendor: Bool
+```
+
 ### `blogURL`
 
 ```swift

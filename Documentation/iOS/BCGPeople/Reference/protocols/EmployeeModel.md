@@ -78,3 +78,9 @@ var locationCountry: String?
 ```swift
 var indexableContacts: [IndexableContact]
 ```
+
+### `isVendor`
+
+```swift
+var isVendor: Bool
+```

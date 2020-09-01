@@ -42,9 +42,3 @@ public func scrollViewDidScroll(_ scrollView: UIScrollView)
 ```swift
 public func apply(_ snapshot: NSDiffableDataSourceSnapshot<IdentifiableSection, IdentifiableItem>, withAnimations: Bool = true)
 ```
-
-### `updateSections(_:)`
-
-```swift
-public func updateSections(_ sections: [IdentifiableSection])
-```
