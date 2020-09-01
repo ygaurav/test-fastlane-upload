@@ -25,6 +25,12 @@ var isBiometricsSetup: Bool
 var email: String?
 ```
 
+### `hrid`
+
+```swift
+var hrid: String?
+```
+
 ## Methods
 ### `save(credentials:)`
 
