@@ -43,9 +43,15 @@ public let healthReportingEnabled: Bool
 public let checkinEnabled: Bool
 ```
 
-## Methods
-### `init(adminEmail:adminTeamName:poolName:officeSpaceGuidelines:healthReportingEnabled:checkinEnabled:)`
+### `requestASeatOption`
 
 ```swift
-public init(adminEmail: String? = nil, adminTeamName: String? = nil, poolName: String? = nil, officeSpaceGuidelines: String? = nil, healthReportingEnabled: Bool = false, checkinEnabled: Bool = true)
+public let requestASeatOption: RequestASeatOption
+```
+
+## Methods
+### `init(adminEmail:adminTeamName:poolName:officeSpaceGuidelines:healthReportingEnabled:checkinEnabled:requestASeatOption:)`
+
+```swift
+public init(adminEmail: String? = nil, adminTeamName: String? = nil, poolName: String? = nil, officeSpaceGuidelines: String? = nil, healthReportingEnabled: Bool = false, checkinEnabled: Bool = true, requestASeatOption: RequestASeatOption = .alert)
 ```

@@ -23,6 +23,7 @@
 ## Enums
 
 -   [GeoLocationErrors](enums/GeoLocationErrors.md)
+-   [RequestASeatOption](enums/RequestASeatOption.md)
 
 ## Extensions
 
