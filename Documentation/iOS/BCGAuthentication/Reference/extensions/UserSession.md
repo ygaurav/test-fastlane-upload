@@ -25,6 +25,12 @@ var email: String?
 
 > User email if provided
 
+### `hrID`
+
+```swift
+var hrID: String?
+```
+
 ## Methods
 ### `logout(onSuccess:)`
 
