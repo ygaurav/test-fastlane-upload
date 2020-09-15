@@ -18,3 +18,9 @@ case alert = "ALERT"
 ```swift
 case screen = "SCREEN"
 ```
+
+### `noOption`
+
+```swift
+case noOption = "NONE"
+```

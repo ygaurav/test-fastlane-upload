@@ -49,9 +49,22 @@ public let checkinEnabled: Bool
 public let requestASeatOption: RequestASeatOption
 ```
 
-## Methods
-### `init(adminEmail:adminTeamName:poolName:officeSpaceGuidelines:healthReportingEnabled:checkinEnabled:requestASeatOption:)`
+### `enableAddPeopleToPending`
 
 ```swift
-public init(adminEmail: String? = nil, adminTeamName: String? = nil, poolName: String? = nil, officeSpaceGuidelines: String? = nil, healthReportingEnabled: Bool = false, checkinEnabled: Bool = true, requestASeatOption: RequestASeatOption = .alert)
+public let enableAddPeopleToPending: Bool
+```
+
+## Methods
+### `init(adminEmail:adminTeamName:poolName:officeSpaceGuidelines:healthReportingEnabled:checkinEnabled:requestASeatOption:enableAddPeopleToPending:)`
+
+```swift
+public init(adminEmail: String? = nil,
+            adminTeamName: String? = nil,
+            poolName: String? = nil,
+            officeSpaceGuidelines: String? = nil,
+            healthReportingEnabled: Bool = false,
+            checkinEnabled: Bool = true,
+            requestASeatOption: RequestASeatOption = .alert,
+            enableAddPeopleToPending: Bool = false)
 ```
