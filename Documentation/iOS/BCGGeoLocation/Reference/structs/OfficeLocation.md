@@ -19,6 +19,12 @@ public let id: String?
 public let name: String?
 ```
 
+### `phone`
+
+```swift
+public let phone: String?
+```
+
 ### `regionId`
 
 ```swift
@@ -110,8 +116,8 @@ public var address: CNPostalAddress
 ```
 
 ## Methods
-### `init(id:name:regionId:street:street2:street3:city:state:zipCode:country:imageUrl:location:timezone:weather:configuration:)`
+### `init(id:name:phone:regionId:street:street2:street3:city:state:zipCode:country:imageUrl:location:timezone:weather:configuration:)`
 
 ```swift
-public init(id: String, name: String?, regionId: String?, street: String?, street2: String?, street3: String?, city: String?, state: String?, zipCode: String?, country: String?, imageUrl: String?, location: BCGLocationCoordinate?, timezone: String?, weather: Weather?, configuration: Configuration = Configuration())
+public init(id: String?, name: String? = nil, phone: String? = nil, regionId: String? = nil, street: String? = nil, street2: String? = nil, street3: String? = nil, city: String? = nil, state: String? = nil, zipCode: String? = nil, country: String? = nil, imageUrl: String? = nil, location: BCGLocationCoordinate? = nil, timezone: String? = nil, weather: Weather? = nil, configuration: Configuration = Configuration())
 ```
