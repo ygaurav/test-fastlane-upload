@@ -31,6 +31,12 @@ var enableEditEvent: Bool
 var enableAddProfileEvent: Bool
 ```
 
+### `showHealthDeclarationOptionOnEveryCall`
+
+```swift
+var showHealthDeclarationOptionOnEveryCall: Bool
+```
+
 ### `isAdmin`
 
 ```swift

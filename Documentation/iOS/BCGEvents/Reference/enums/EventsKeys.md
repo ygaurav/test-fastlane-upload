@@ -30,3 +30,15 @@ case loggedInUserMail = "UserEmail"
 ```swift
 case loggedInUserFirsName = "FirstName"
 ```
+
+### `lastHealthDeclarationShownDate`
+
+```swift
+case lastHealthDeclarationShownDate = "com.BCGEvents.lastHealthDeclarationShownDate"
+```
+
+### `isHealthDeclarationAlertShown`
+
+```swift
+case isHealthDeclarationAlertShown = "com.BCGEvents.isHealthDeclarationAlertShown"
+```
